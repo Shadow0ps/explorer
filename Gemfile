@@ -47,9 +47,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller', '~> 1.0'
-  gem 'rubocop', '~> 1.9', '>= 1.9.1', require: false
-  gem 'rubocop-performance', '~> 1.9', '>= 1.9.2', require: false
-  gem 'rubocop-rails', '~> 2.9', '>= 2.9.1', require: false
+  gem 'rubocop', '~> 1.23', '>= 1.23.0', require: false
+  gem 'rubocop-performance', '~> 1.13', '>= 1.13.0', require: false
+  gem 'rubocop-rails', '~> 2.13', '>= 2.13.0', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
