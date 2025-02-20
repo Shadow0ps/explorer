@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.1'
+gem 'rails', '~> 7.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
@@ -48,8 +48,8 @@ group :development do
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller', '~> 1.0'
   gem 'rubocop', '~> 1.9', '>= 1.9.1', require: false
-  gem 'rubocop-performance', '~> 1.9', '>= 1.9.2', require: false
-  gem 'rubocop-rails', '~> 2.9', '>= 2.9.1', require: false
+  gem 'rubocop-performance', '~> 1.24', '>= 1.24.0', require: false
+  gem 'rubocop-rails', '~> 2.30', '>= 2.30.0', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
