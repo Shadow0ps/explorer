@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.1'
+gem 'rails', '~> 7.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
@@ -29,7 +29,7 @@ gem 'feedjira', '~> 3.1', '>= 3.1.2'
 
 # Logger
 gem 'bitquery_logger', git: 'https://github.com/bitquery/bitquery_logger.git', branch: 'main'#, path: '../bitquery_logger'
-gem 'exception_notification'
+gem 'exception_notification', '>= 5.0.0'
 gem 'exception_notification-rake', '~> 0.3.1'
 
 # Reduces boot times through caching; required in config/boot.rb
