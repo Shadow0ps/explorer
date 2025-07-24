@@ -4,13 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.1'
+gem 'rails', '~> 6.0.4', '>= 6.0.4.2'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5.0', '>= 5.0.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 # gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -25,11 +25,11 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'graphql-client'
 
-gem 'feedjira', '~> 3.1', '>= 3.1.2'
+gem 'feedjira', '~> 3.2', '>= 3.2.1'
 
 # Logger
 gem 'bitquery_logger', git: 'https://github.com/bitquery/bitquery_logger.git', branch: 'main'#, path: '../bitquery_logger'
-gem 'exception_notification'
+gem 'exception_notification', '>= 4.5.0'
 gem 'exception_notification-rake', '~> 0.3.1'
 
 # Reduces boot times through caching; required in config/boot.rb
@@ -43,7 +43,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 4.2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller', '~> 1.0'
@@ -64,6 +64,6 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   # gem 'capistrano-rvm'
-  gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
+  gem 'dotenv-rails', '~> 2.8', '>= 2.8.0'
   gem 'sshkit-sudo'
 end
